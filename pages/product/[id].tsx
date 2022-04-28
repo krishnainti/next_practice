@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { SingleProduct } from "../interfaces.ts";
-import Header from "../Layout/Head";
-import Heading from "../Layout/Heading";
-import Footer from "../Layout/Footer";
-import { getSingleProduct } from "../api/product.service";
-import Loader from "../Layout/Loader";
+import { SingleProduct } from "../../interfaces";
+import Header from "../../components/Layout/Head";
+import Heading from "../../components/Layout/Heading";
+import Footer from "../../components/Layout/Footer";
+import { getSingleProduct } from "../../services/api/product.service";
+import Loader from "../../components/Layout/Loader";
 
 const ProductPage: NextPage = () => {
   const [product, setProduct] = useState<SingleProduct>(Object);

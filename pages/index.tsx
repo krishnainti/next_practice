@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { useState, useEffect } from "react";
-import { Product } from "./interfaces.ts";
-import Header from "./Layout/Head";
-import Footer from "./Layout/Footer";
-import { getProducts } from "./api/product.service";
+import { Product } from "../interfaces";
+import Header from "../components/Layout/Head";
+import Footer from "../components/Layout/Footer";
+import { getProducts } from "../services/api/product.service";
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "./Layout/Heading";
-import Loader from "./Layout/Loader";
+import Heading from "../components/Layout/Heading";
+import Loader from "../components/Layout/Loader";
 
 const Home: NextPage = () => {
   const [products, setProducts] = useState<Product[]>([]);

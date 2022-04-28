@@ -1,4 +1,4 @@
-import { Product, SingleProduct } from "../interfaces.ts";
+import { Product, SingleProduct } from "../../interfaces";
 
 export const getProducts = async (): Promise<Product[]> => {
   return fetch("https://fakestoreapi.com/products")
